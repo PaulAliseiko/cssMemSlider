@@ -5,12 +5,12 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     margin: 0;
-     background-color: rgb(4, 4, 4);
-    /* height: 100vh; */
+    background-color: rgb(4, 4, 4);
 }
 .main-container {
     width: 100%;
@@ -32,14 +32,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 90%;
+    flex-direction: column;
     height: 100%;
+    gap: 0.25rem;
 }
 .img-item {
     display: flex;
     justify-self: center;
 }
+
 
 /* radiobuttons */
 
@@ -52,8 +54,8 @@ body {
 }
 .dot {
     background-color: aqua;
-    width: 2rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
     transition: all .3s ease;
     margin: 0.5em;
     cursor: pointer;
@@ -63,77 +65,111 @@ body {
 }
 .dot:active {
     transform: scale(1.15);
+    
 }
+
+/* memes */
+
 #one {
-    transition: .3s;
+    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 #_one:checked ~ #one {
-    transition: .3s;
+    /* transition: .3s; */
     opacity: 1;
     visibility: visible;
     background-image: url(../../assets/img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
     height: 20em;
 }
+#_one:checked ~ #text1::before {
+    content: "Ready to new RS-School week!";
+    font-size: 24px;
+    color: white;
+}
 #two {
-    transition: .3s;
+    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 #_two:checked ~ #two {
-    transition: .3s;
+    /* transition: .3s; */
     opacity: 1;
     visibility: visible;
     background-image: url(../../assets/img/2.jpg);
     background-size: cover;
+    background-position: center;
     width: 50%;
     height: 20em;
 }
+#_two:checked ~ #text2::before {
+    content: "Open shedule";
+    font-size: 24px;
+    color: white;
+}
 #three {
-    transition: .3s;
+    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 #_three:checked ~ #three {
-    transition: .3s;
+    /* transition: .3s; */
     opacity: 1;
     visibility: visible;
     background-image: url(../../assets/img/3.jpg);
     background-size: cover;
+    background-position: center;
     width: 50%;
     height: 20em;
 }
+#_three:checked ~ #text3::before {
+    content: "Start a task";
+    font-size: 24px;
+    color: white;
+}
 #four {
-    transition: .3s;
+    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 #_four:checked ~ #four {
-    transition: .3s;
+    /* transition: .3s; */
     opacity: 1;
     visibility: visible;
     background-image: url(../../assets/img/4.jpg);
     background-size: cover;
+    background-position: center;
     width: 50%;
     height: 20em;
 }
+#_four:checked ~ #text4::before {
+    content: "Struggling with JS";
+    font-size: 24px;
+    color: white;
+}
 #five {
-    transition: .3s;
+    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 #_five:checked ~ #five {
-    transition: .3s;
+    /* transition: .3s; */
     opacity: 1;
     visibility: visible;
     background-image: url(../../assets/img/5.jpg);
     background-size: cover;
+    background-position: center;
     width: 50%;
     height: 20em;
+}
+#_five:checked ~ #text5::before {
+    content: "Face Student1 score";
+    font-size: 24px;
+    color: white;
 }
 input[type=radio] {
     display: none;
