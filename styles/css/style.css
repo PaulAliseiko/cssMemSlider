@@ -83,12 +83,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 50%;
+    width: 22em;
     height: 20em;
 }
 #_one:checked ~ #text1::before {
     content: "Ready to new RS-School week!";
-    font-size: 24px;
+    font-size: 2rem;
     color: white;
 }
 #two {
@@ -103,12 +103,12 @@ body {
     background-image: url(../../assets/img/2.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 22em;
     height: 20em;
 }
 #_two:checked ~ #text2::before {
     content: "Open shedule";
-    font-size: 24px;
+    font-size: 2rem;
     color: white;
 }
 #three {
@@ -123,12 +123,12 @@ body {
     background-image: url(../../assets/img/3.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 22em;
     height: 20em;
 }
 #_three:checked ~ #text3::before {
     content: "Start a task";
-    font-size: 24px;
+    font-size: 2rem;
     color: white;
 }
 #four {
@@ -143,12 +143,12 @@ body {
     background-image: url(../../assets/img/4.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 22em;
     height: 20em;
 }
 #_four:checked ~ #text4::before {
     content: "Struggling with JS";
-    font-size: 24px;
+    font-size: 2rem;
     color: white;
 }
 #five {
@@ -163,12 +163,12 @@ body {
     background-image: url(../../assets/img/5.jpg);
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 22em;
     height: 20em;
 }
 #_five:checked ~ #text5::before {
     content: "Face Student1 score";
-    font-size: 24px;
+    font-size: 2rem;
     color: white;
 }
 input[type=radio] {
