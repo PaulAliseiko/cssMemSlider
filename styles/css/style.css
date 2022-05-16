@@ -42,7 +42,6 @@ body {
     justify-self: center;
 }
 
-
 /* radiobuttons */
 
 .dots {
@@ -75,6 +74,29 @@ body {
     opacity: 0;
     visibility: hidden;
 }
+#two {
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#three {
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#four {
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#five {
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* show memes */
+
 #_one:checked ~ #one {
     opacity: 1;
     visibility: visible;
@@ -85,16 +107,6 @@ body {
     width: 22em;
     height: 20em;
 }
-#_one:checked ~ #text1::before {
-    content: "Ready to new RS-School week!";
-    font-size: 2rem;
-    color: white;
-}
-#two {
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
-}
 #_two:checked ~ #two {
     opacity: 1;
     visibility: visible;
@@ -103,16 +115,6 @@ body {
     background-position: center;
     width: 22em;
     height: 20em;
-}
-#_two:checked ~ #text2::before {
-    content: "Open shedule";
-    font-size: 2rem;
-    color: white;
-}
-#three {
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
 }
 #_three:checked ~ #three {
     opacity: 1;
@@ -123,16 +125,6 @@ body {
     width: 22em;
     height: 20em;
 }
-#_three:checked ~ #text3::before {
-    content: "Start a task";
-    font-size: 2rem;
-    color: white;
-}
-#four {
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
-}
 #_four:checked ~ #four {
     opacity: 1;
     visibility: visible;
@@ -141,16 +133,6 @@ body {
     background-position: center;
     width: 22em;
     height: 20em;
-}
-#_four:checked ~ #text4::before {
-    content: "Struggling with JS";
-    font-size: 2rem;
-    color: white;
-}
-#five {
-    transition: all .5s;
-    opacity: 0;
-    visibility: hidden;
 }
 #_five:checked ~ #five {
     opacity: 1;
@@ -161,11 +143,34 @@ body {
     width: 22em;
     height: 20em;
 }
+input[type=radio] {
+    display: none;
+}
+
+/* memes text */
+
+#_one:checked ~ #text1::before {
+    content: "Ready to new RS-School week!";
+    font-size: 2rem;
+    color: white;
+}
+#_two:checked ~ #text2::before {
+    content: "Open shedule";
+    font-size: 2rem;
+    color: white;
+}
+#_three:checked ~ #text3::before {
+    content: "Start a task";
+    font-size: 2rem;
+    color: white;
+}
+#_four:checked ~ #text4::before {
+    content: "Struggling with JS";
+    font-size: 2rem;
+    color: white;
+}
 #_five:checked ~ #text5::before {
     content: "Face Student1 score";
     font-size: 2rem;
     color: white;
-}
-input[type=radio] {
-    display: none;
 }
